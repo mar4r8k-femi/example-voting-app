@@ -8,5 +8,8 @@
       "version": "latest",
       "dockerDashComposeVersion": "v2"
     }
-  }
+  },
+  "mounts": [
+    "source=dind-${localWorkspaceFolderBasename},target=/var/lib/docker,type=volume"
+  ]
 }
