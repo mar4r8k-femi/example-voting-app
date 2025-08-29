@@ -2,12 +2,7 @@
   "name": "Harness",
   "image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "moby": true,
-      "installDockerBuildx": true,
-      "version": "latest",
-      "dockerDashComposeVersion": "v2"
-    }
+    "ghcr.io/devcontainers/features/lima:1": {}
   },
   "mounts": [
     "source=dind-harness-docker,target=/var/lib/docker,type=volume"
